@@ -1,9 +1,135 @@
 {% extends "users/base.html" %}
-{%block title%} Welcome {%endblock title%}
 {% block content %}
-    <div class="content-section">
 
-        <h1> Hello new user</h1>
-        
+
+<div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>FE</b>male</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+    <a href="#Blogs" class="w3-bar-item w3-button">Blogs</a>
+    <a href="#Donation" class="w3-bar-item w3-button">Donation</a>
+    <a href="#Sign up" class="w3-bar-item w3-button">Sign up</a>
     </div>
-{% endblock content %}
+    </div>
+    
+    <!-- Page Start -->
+    <div id="home" class="w3-content" style="max-width:1564px">
+    
+    <!-- Image -->
+    <div class="w3-display-container w3-content" style="max-width:1500px;">
+    <img class="w3-image" src="images/title.jpg" alt="Architecture" width="100%">
+    <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white w3-wide">
+      <span class="w3-padding w3-black w3-opacity-min"><b>WE</b></span>
+      <span class="w3-hide-small w3-text-pink">Love For Women</span>
+    </h1>
+    </div>
+    </div>
+    
+    <!-- Projects -->
+    <div id="Blogs" class="w3-container w3-padding-32">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Catergories</h2>
+    </div>
+    
+    <div class="w3-row-padding">
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-display-middle w3-padding">Tuition</div>
+      <img src="images/college.jpg" class="w3-hover-sepia" height="370px"alt="House" style="width:100%">
+    </div>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-display-middle w3-padding">Dream</div>
+      <img src="images/dream.jpg" class="w3-hover-sepia" height="370px" alt="House" style="width:100%">
+    </div>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-display-middle  w3-padding">Health</div>
+      <img src="images/health.jpg" class="w3-hover-sepia" height="370px" alt="House" style="width:100%">
+    </div>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-display-middle  w3-padding">Family</div>
+      <img src="images/family.jpg" class="w3-hover-sepia" height="370px" alt="House" style="width:100%">
+    </div>
+    </div>
+    
+    
+    
+    </div>
+    
+    <!-- About -->
+    <div id="Donation" class="w3-container w3-padding-32">
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Donation</h2>
+    <p>The website is dedicated to render or receive supports from your female counterparts </p>
+    </div>
+    
+    <div class="w3-row-padding w3-grayscale">
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+    <img src="images/Ava.jpg" height="250" alt="Ava" style="width:100%">
+    <h3> Ava </h3>
+    <p class="w3-opacity">Single mother</p>
+    <p>I earn money as a freelancer while having to take care my kids at home i would like to hire a domestic helper but don't have no money
+    </p>
+    <p><button class="w3-button w3-light-grey w3-block">donate</button></p>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+    <img src="images/Wendy.jpg" height="250" alt="Wendy" style="width:100%">
+    <h3> Wendy </h3>
+    <p class="w3-opacity">college student</p>
+    <p>I got the offer form HKUST but not able to cover the tution fee due to my poor financial status
+    it would be lovely if you could help me.</p>
+    <p><button class="w3-button w3-light-grey w3-block">donate</button></p>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+    <img src="images/Yolanda.jpg" height="250" alt="Yolanda" style="width:100%">
+    <h3> Yolanda </h3>
+    <p class="w3-opacity">liver cancer patient</p>
+    <p>I was recognised to have cancer half year ago ,However i was not able to cover the medical bills
+    it would be nice if you can help me</p>
+    <p><button class="w3-button w3-light-grey w3-block">donate</button></p>
+    </div>
+    
+    <div class="w3-col l3 m6 w3-margin-bottom">
+    <img src="images/Terresa.jpg" height="250" alt="Terresa" style="width:100%">
+    <h3>Terresa</h3>
+    <p class="w3-opacity">startup founder</p>
+    <p>i am a poor college student who just founded a tech startup,click in to see more information of my company.</p>
+    <p><button class="w3-button w3-light-grey w3-block">donate</button></p>
+    </div>
+    
+    </div>
+    
+    <!-- Contact Section -->
+    <div id="Sign up" class="w3-container w3-padding-top-32">
+    
+    <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sign up</h2>
+    <p>Lets sign up to be a donor or receiver </p>
+    
+    <form action="/action_page.php" target="_blank">
+    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Password" required name="Password">
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Confirm Password" required name="Confirmed Password">
+    <button class="w3-button w3-black w3-section" type="submit">
+    <i class="fa fa-paper-plane"></i> Register
+    </button>
+    </form>
+    
+    <img src="images/2.jpg" style="width:100%"  class="w3-round">
+    
+    
+    
+    <!-- End page content -->
+    </div>
+    {% endblock content %}

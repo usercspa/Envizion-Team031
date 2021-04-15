@@ -1,5 +1,5 @@
 # created by virtualenv automatically
 Lib/
 Scripts/
-./pyvenv.cfg/
-./.gitignore
+*.cfg
+*.gitignore

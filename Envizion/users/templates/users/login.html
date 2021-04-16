@@ -2,16 +2,22 @@
 {%load crispy_forms_tags %}
 {%block title%} Register {%endblock title%}
 {% block content %}
-    <div class="content-section">
+<br><br/>
 
+    <div class="content-section">
+        <header class="w3-container w3-teal">
         <h1> Login</h1>
+        </header>>
+        <div class="w3-container w3-half w3-margin-top">
+
+            <form class="w3-container w3-card-4">
         <form method="POST">
             {% csrf_token %}
             
             {{form|crispy }}
 
             <div >
-                <button type = "submit">Sign In</button>
+                <button type = "submit" class="w3-button w3-section w3-teal w3-ripple">Sign In</button>
             </div>
         </form>
         <div> 
@@ -20,4 +26,7 @@
             </small>
         </div>
     </div>
+</form>
+
+</div>
 {% endblock content %}

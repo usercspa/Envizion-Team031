@@ -11,13 +11,12 @@
 
 <body>
 <div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
-<a href="#home" class="w3-bar-item w3-button"><b>FE</b>male</a>
+<a href="{%url 'user-home' %}" class="w3-bar-item w3-button"><b>FE</b>male</a>
 <!-- Float links to the right. Hide them on small screens -->
 <div class="w3-right w3-hide-small">
-<a href="#Introduction" class="w3-bar-item w3-button">Introduction</a>
-<a href="#Donation" class="w3-bar-item w3-button">Donation</a>
-<a href="#Calendar" class="w3-bar-item w3-button">Calendar</a>
-<a href="#Sign in" class="w3-bar-item w3-button">Sign in</a>
+<a href="{%url 'blog-home' %}" class="w3-bar-item w3-button">Blog</a>
+<a href="{%url 'login' %}" class="w3-bar-item w3-button">Donation</a>
+<a href="{%url 'login' %}" class="w3-bar-item w3-button">Sign in</a>
 <a href="{%url 'register' %}" class="w3-bar-item w3-button">Sign up</a>
 </div>
 </div>

@@ -1,5 +1,6 @@
 {% extends "users/base.html" %}
 {% block content %}
+{% load static %}
 
 
     
@@ -24,28 +25,28 @@
   <div class="w3-col l3 m6 w3-margin-bottom">
   <div class="w3-display-container">
     <div class="w3-display-middle w3-padding" style="text-shadow:1px 1px 0 #444" >Education</div>
-    <img src="images/college.jpg" class="w3-hover-sepia w3-circle" height="370px"alt="House" style="width:100%">
+    <img src="{% static 'college.jpg' %}" class="w3-hover-sepia w3-circle" height="370px"alt="House" style="width:100%">
   </div>
   </div>
   
   <div class="w3-col l3 m6 w3-margin-bottom">
   <div class="w3-display-container">
     <div class="w3-display-middle w3-padding">Dream</div>
-    <img src="images/dream.jpg" class="w3-hover-sepia w3-border w3-padding" height="370px" alt="House" style="width:100%">
+    <img src="{% static 'dream.jpg' %}" class="w3-hover-sepia w3-border w3-padding" height="370px" alt="House" style="width:100%">
   </div>
   </div>
   
   <div class="w3-col l3 m6 w3-margin-bottom">
   <div class="w3-display-container">
     <div class="w3-display-middle  w3-padding">Health</div>
-    <img src="images/health.jpg" class="w3-hover-sepia w3-round" height="370px" alt="House" style="width:100%">
+    <img src="{% static 'health.jpg' %}" class="w3-hover-sepia w3-round" height="370px" alt="House" style="width:100%">
   </div>
   </div>
   
   <div class="w3-col l3 m6 w3-margin-bottom">
   <div class="w3-display-container">
     <div class="w3-display-middle  w3-padding">Family</div>
-    <img src="images/family.jpg" class="w3-hover-sepia" height="370px" alt="House" style="width:100%">
+    <img src="{% static 'family.jpg' %}" class="w3-hover-sepia" height="370px" alt="House" style="width:100%">
   </div>
   </div>
   
@@ -62,7 +63,7 @@
   <div class="w3-row-padding w3-grayscale">
   
   <div class="w3-col l3 m6 w3-margin-bottom">
-  <img src="images/Ava.jpg" height="250" alt="Ava" style="width:100%">
+  <img src="{% static 'Ava.jpg' %}" height="250" alt="Ava" style="width:100%">
   <h3> Ava </h3>
   <p class="w3-opacity"style="text-shadow:1px 1px 0 #444">Single mother</p>
   <p>I earn money as a freelancer while having to take care my kids at home i would like to hire a domestic helper but don't have no money..
@@ -71,7 +72,7 @@
   </div>
   
   <div class="w3-col l3 m6 w3-margin-bottom">
-  <img src="images/Wendy.jpg" height="250" alt="Wendy" style="width:100%">
+  <img src="{% static 'Wendy.jpg' %}" height="250" alt="Wendy" style="width:100%">
   <h3> Wendy </h3>
   <p class="w3-opacity"style="text-shadow:1px 1px 0 #444">college student</p>
   <p>I got the offer form HKU but not able to cover the tution fee due to my poor financial status
@@ -80,7 +81,7 @@
   </div>
   
   <div class="w3-col l3 m6 w3-margin-bottom">
-  <img src="images/Yolanda.jpg" height="250" alt="Yolanda" style="width:100%">
+  <img src="{% static 'Yolanda.jpg' %}" height="250" alt="Yolanda" style="width:100%">
   <h3> Yolanda </h3>
   <p class="w3-opacity"style="text-shadow:1px 1px 0 #444">liver cancer patient</p>
   <p>I was recognised to have cancer half year ago ,However i was not able to cover the medical bills
@@ -89,7 +90,7 @@
   </div>
   
   <div class="w3-col l3 m6 w3-margin-bottom">
-  <img src="images/Terresa.jpg" height="250" alt="Terresa" style="width:100%">
+  <img src="{% static 'Terresa.jpg' %}" height="250" alt="Terresa" style="width:100%">
   <h3>Terresa</h3>
   <p class="w3-opacity"style="text-shadow:1px 1px 0 #444">startup founder</p>
   <p>i am a poor college student who just founded a tech startup which caters the waste disposal problem ,click in to see more..</p>
@@ -102,7 +103,7 @@
   
   
   
-  <img src="images/2.jpg" style="width:100%"  class="w3-round">
+  <img src="{% static '2.jpg' %}" style="width:100%"  class="w3-round">
     
     
     <!-- End page content -->

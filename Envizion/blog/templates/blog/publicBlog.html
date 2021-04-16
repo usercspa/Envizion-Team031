@@ -1,5 +1,5 @@
 
-
+{% load static %}
 {% block content %}
 <style>
     body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
@@ -58,7 +58,7 @@
 
       <!-- Blog entry -->
       <div class="w3-card-4 w3-margin w3-white">
-      <img src="images/ballet.jpg" alt="Norway" style="width:100%">
+      <img src="{% static 'ballet.jpg' %}" alt="Norway" style="width:100%">
         <div class="w3-container">
           <h3><b>Becoming a professional dancer</b></h3>
           <h5>journey <span class="w3-opacity">March 7, 2021</span></h5>
@@ -86,7 +86,7 @@
     <div class="w3-col l4">
       <!-- About Card -->
       <div class="w3-card w3-margin w3-margin-top">
-      <img src="images/guitar.jpg" style="width:100%">
+      <img src="{% static 'guitar.jpg' %}" style="width:100%">
         <div class="w3-container w3-white">
           <h4><b>Free Education</b></h4>
           <p>It is just me or everybody want to play learn guitar at some point of their life.However,doesn't want to spend that much money
@@ -102,22 +102,22 @@
         </div>
         <ul class="w3-ul w3-hoverable w3-white">
           <li class="w3-padding-16">
-            <img src="images/bachelor.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <img src="{% static 'bachelor.jpg' %}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
             <span class="w3-large">Melody</span><br>
             <span>my first bachleor degree</span>
           </li>
           <li class="w3-padding-16">
-            <img src="images/harvard.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <img src="{% static 'harvard.jpg' %}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
             <span class="w3-large">Berry</span><br>
             <span>The way to Harvard</span>
           </li>
           <li class="w3-padding-16">
-            <img src="images/michelin.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <img src="{% static 'michelin.jpg' %}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
             <span class="w3-large">Kathy</span><br>
             <span>Becoming a michellen 5 star chef</span>
           </li>
           <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-            <img src="images/master.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <img src="{% static 'master.jpg' %}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
             <span class="w3-large">Emma</span><br>
             <span>Master Degree is not easy</span>
           </li>

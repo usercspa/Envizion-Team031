@@ -1,19 +1,22 @@
 {% extends "users/base.html" %}
 {% block content %}
+{% load static %}
 
 <br></br>
 <br></br>
 
     <!-- Blog entries -->
-    <div class="w3-col l8 s12">
+    <div class="w3-col l10 s14">
         <!-- Blog entry -->
         <div class="w3-card-4 w3-margin w3-white">
           
           <div class="w3-container">
 
     {%for post in posts%}
-    <div>
+    <div class="w3-panel w3-border-top w3-border-bottom w3-border-green">
+        <img src="{% static 'family.jpg' %}" class="w3-left w3-margin-right w3-circle" style="width:80px">
         <h1>{{post.title}}</h1>
+        
         <p>Author: {{post.author}} on {{post.postDate}}</p>
         <p>{{post.content}}</p>
     </div>    

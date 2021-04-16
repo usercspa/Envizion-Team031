@@ -12,13 +12,13 @@
         end = (tomorrow + timedelta(hours=2)).isoformat()
 
         event_result = service.events().update(
-          calendarId='primary',
+          calendarId='household chores',
           eventId='<place your event ID here>',
           body={
-           "summary": 'Updated Automating calendar',
-           "description": 'This is a tutorial example of automating google calendar with python, updated time.',
-           "start": {"dateTime": start, "timeZone": 'Asia/Kolkata'},
-           "end": {"dateTime": end, "timeZone": 'Asia/Kolkata'},
+           "summary": 'Updated Family calendar',
+           "description": 'For distribution of childcare & housework',
+           "start": {"dateTime": start, "timeZone": 'Asia/HongKong'},
+           "end": {"dateTime": end, "timeZone": 'Asia/HongKong'},
            },
         ).execute()
 

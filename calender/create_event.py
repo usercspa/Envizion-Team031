@@ -11,12 +11,12 @@ def main():
    start = tomorrow.isoformat()
    end = (tomorrow + timedelta(hours=1)).isoformat()
 
-   event_result = service.events().insert(calendarId='primary',
+   event_result = service.events().insert(calendarId='household chores',
        body={
-           "summary": 'Automating calendar',
-           "description": 'This is a tutorial example of automating google calendar with python',
-           "start": {"dateTime": start, "timeZone": 'Asia/Kolkata'},
-           "end": {"dateTime": end, "timeZone": 'Asia/Kolkata'},
+           "summary": 'Family calendar',
+           "description": 'For distribution of childcare & housework',
+           "start": {"dateTime": start, "timeZone": 'Asia/HongKong'},
+           "end": {"dateTime": end, "timeZone": 'Asia/HongKong'},
        }
    ).execute()
 
